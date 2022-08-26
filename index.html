@@ -1,29 +1,42 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dolton Russell Portfolio</title>
-    <link href='./Resources/CSS/style.css' rel='stylesheet'>
-</head>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dolton Russell Portfolio</title>
+        <link href='./Resources/CSS/style.css' rel='stylesheet'>
+        <meta charset="utf-8">
+    </head>
 
-<body>
-
+    <body>
         <!--    NAVIGATION MENU    -->
-    <nav class='nav-menu'>
-        <h3>Dolton<br>Russell</h3>
-        <ul id="nav-links">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-     </nav>
-     
-    <section id="about">
-        <div id="about-main">
-            <h1>This Is A Test Title</h1>
-        </div>
-    </section>
+        <header>
+            <h3>Dolton<br>Russell</h3>
+            <nav class='nav-menu'>
+                <ul id="nav-links">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-</body>
+        <main>
+            <section id="about">
+                <div id="aboutMain">
+                    <h2>I'm here to publish my projects</h2>
+                    <p> This is a working site developed for the purpose of archiving my work</p>
+                </div>
+            </section>
+            <hr>
+            <section class="work" id="truPay" >
+                <h2><a href="./TruPay/index.html" target="_blank">TruPay</a></h2>
+                <p>TruPay is a simple income calculator for drivers</p>
+                <i id="howItWorks">The parameters offered here will tell you gross and net values for both earned income and hourly.<br>
+                Simply enter the values desired and select calculate.</i>
+                <aside id="goals"></aside>
+            </section>
+
+        </main>
+    </body>
 </html>
