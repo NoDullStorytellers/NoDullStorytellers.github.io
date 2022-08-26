@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(38, 38, 38);
+}
+
+html {
+    margin: 0;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h1 em {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+
+form {
+    border: thin solid black;
+    min-width: 275px;
+    margin-left: 25%;
+    margin-right: 25%;
+    box-shadow: 0rem 0 0.25rem 0 rgba(0, 0, 0, 1) inset;
+}
+
+#formgroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    line-height: 2rem;
+}
+
+#forminput {
+    display: inline-flex;
+    align-items: center;
+}
+/* FONT AWESOME */
+#forminput > i {
+    position: absolute;
+    border-spacing: 0.3125rem;
+    border: 2px solid rgb(33, 33, 33);
+    border-radius: 5px;
+    padding: 0.1rem 0.25rem 0.16875rem 0.25rem;
+    background-color: rgb(50, 50, 51);
+    color: whitesmoke; 
+}
+
+
+input{
+    text-align: center;
+    padding-left: 1.5rem;
+    background-color: aliceblue;
+    border-color: rgba(33, 38, 48);
+    border-radius: 5px;
+    box-shadow: 3.5rem 0 1rem -2rem rgba(0, 0, 0, 1) inset;
+    
+}
+
+input:hover {
+    box-shadow: 1.4rem 0 0.25rem 0 rgba(0, 0, 0, 1) inset;
+    transition: box-shadow 100ms ease-in-out;
+}   
+
+input::placeholder {
+    text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button {
+    background-color: aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:active {
+    box-shadow: 0rem 0 0.25rem 0 rgba(0, 0, 0, 1) inset;
+}
+
+@media (width <= 550px) {
+    form { margin: 0; }
+}
