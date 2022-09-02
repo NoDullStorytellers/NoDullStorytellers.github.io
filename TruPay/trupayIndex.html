@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TruPay</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Resources/CSS/trupayStyle.css">
+    <script src="https://kit.fontawesome.com/490b6b48bd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <!-- NAVIGATION -->
+        <nav class='nav-menu'>
+            <ul id="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        </header>
+        
+        <main>
+        <!--Title and Call to Action-->
+        <div id="banner">
+            <h1>How much are you <em>really</em> making?</h1>
+            <p id='actioncall'>Does your job depend on your transportation? Is the commute really worth it?<br><br>Crunch the numbers and see just how much income you're truly earning per hour</p>
+        
+        </div>
+        <!--Calculator-->
+        <form id="trupayform">
+            <!--AMOUNT EARNED LABEL-->
+            <div id="formgroup">
+                <h2>TruPay Calculator</h2>
+            </div>
+            <div id="formgroup">
+                <label>How much did you earn?<br></label>
+                <!--AMOUNT EARNED INPUT-->
+                <div id="forminput">
+                    <i class="fa-solid fa-money-check-dollar"></i>
+                    <input name="amountearned" id="totalPay" placeholder="Total Amount Earned" type="number" step="0.01" >
+                </div>
+            </div>
+            <!--HOURS LABEL-->
+            <div id="formgroup">
+                <label>How many hours did you work?<br></label>
+                <!--HOURS WORKED INPUT-->
+                <div id="forminput">
+                    <i class="fa-solid fa-clock"></i>
+                    <input name="hoursworked" id="timeWorked" placeholder="Hours Worked" type="number" step="0.01" >
+                </div>
+            </div>
+            <!--MILEAGE LABEL-->
+            <div id="formgroup">
+                <label>How many miles did you drive?</label>
+                <!--MILEAGE INPUT-->
+                <div id="forminput">
+                    <i class="fa-solid fa-road"></i>
+                    <input name="milesdriven" id="mileage" placeholder="Total Miles Driven" type="number" step="0.01" >
+                </div>
+            </div>
+            <!--MPG LABEL-->
+            <div id="formgroup">
+                <label>Vehicle's Estimated Fuel Efficiency</label>
+                <!--MPG INPUT-->
+                <div id="forminput">
+                    <i class="fa-solid fa-gauge-simple"></i>
+                    <input name="vehiclempg" id="carMPG" placeholder="Vehicle MPG" type="number" step="0.01" >
+                </div>
+            </div>
+            <!--GAS PRICE LABEL-->
+            <div id="formgroup">
+                <label>Price of gas when last purchased</label>
+                <!--GAS PRICE INPUT-->
+                <div id="forminput">
+                    <i class="fa-solid fa-gas-pump"></i>
+                    <input name="priceofgas" id="gasPrice" placeholder="Gas Price" type="number" step="0.01" >
+                </div>
+            </div>
+            
+            <!--RESULTS-->
+            <div id="formgroup">
+                <div id="answerContainer">
+                    <p id="resulttext">You averaged <span id ="hourlymileage"></span> miles driven per hour</p>
+                    <p id="resulttext">Hourly earned before gas: $<span id="grosshourly"></span></p>
+                    <p id="resulttext">Hourly cost of gas: $<span id="costpermile"></span></p>
+                    <p id="resulttext">Net hourly after gas: $<span id="moneymade"></span></p>
+                    <p id="resulttext">Net pay: $<span id="aftergasamount"></span></p>
+                </div>
+            </div>
+            <!--BUTTON-->
+            <div id="formgroup">
+                <button id="calculateresult" type="button">Calculate</button>
+            </div>
+        </form>
+    </main>
+</div>
+<script src="./Resources/JavaScript/trupayScript.js"></script>
+
+</body>
+</html>
