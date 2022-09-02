@@ -1,6 +1,12 @@
+@font-face {
+    font-family: 'Readex Pro', sans-serif;
+    src: url('../Fonts/ReadexPro-VariableFont_wght.ttf') format('ttf') tech('variations'),
+         url('../Fonts/ReadexPro-VariableFont_wght.ttf') format('ttf-variations');
+}
+
 * {
     box-sizing: border-box;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Readex Pro', sans-serif;
     font-size: 16px;
     text-align: center;
     background-color: rgb(255, 255, 255);
@@ -9,6 +15,50 @@
 
 html {
     margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+#nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin-left: 25%;
+    padding-right: 25%;
+    
+}
+
+#nav-links a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    z-index: 1000;
+    display: block;
+    --d:14px;
+    color: #000;
+    padding: calc(8px + var(--d)) 8px 8px 8px;
+    background: linear-gradient(rgba(255,255,255,0.4) 0 0) top/100% var(--d) no-repeat;
+    clip-path: polygon(0 var(--d),3px var(--d),calc(100% - 3px) var(--d),100% var(--d),100% 100%,0 100%); 
+    transform: perspective(1000px) rotateX(0deg);
+    transition: 0.4s,color 0.4s 0.4s,background-color 0.4s 0.4s;
+}
+ 
+ #nav-links a:hover {
+   background-color: #000;
+   color: #fff;
+   clip-path: polygon(0 var(--d),3px 0,calc(100% - 3px) 0,100% var(--d),100% 100%,0 100%); 
+   transform: perspective(1000px) rotateX(-40deg);
+   transition: 0.4s,clip-path 0.4s 0.4s,transform 0.4s 0.4s,0.4s;
 }
 
 h1 {
@@ -55,7 +105,9 @@ form {
     color: whitesmoke; 
 }
 
-
+#banner {
+    margin: 5.43rem;
+}
 input{
     text-align: center;
     padding-left: 1.5rem;

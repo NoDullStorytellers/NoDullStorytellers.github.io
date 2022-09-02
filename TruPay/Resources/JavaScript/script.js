@@ -14,14 +14,15 @@ function calculateTruPay() {
     costPerMile = ((gasPrice / carMPG) * mileage) / timeWorked;
     moneyMade = grossHourly - costPerMile;
     netPay = moneyMade * timeWorked;
+    hourlyMileage = mileage / timeWorked;
     // FIXED DECIMAL PLACEMENT
     this.grossHourly = grossHourly.toFixed(2);
     this.costPerMile = costPerMile.toFixed(2);
     this.moneyMade = moneyMade.toFixed(2);
     this.netPay = netPay.toFixed(2);
+    this.hourlyMileage = hourlyMileage.toFixed(2);
 
-
-    return grossHourly, costPerMile, moneyMade, netPay;
+    return grossHourly, costPerMile, moneyMade, netPay, hourlyMileage;
     
 }
 
@@ -36,4 +37,5 @@ calc.addEventListener("click", function getResults() {
     document.getElementById("costpermile").innerHTML = costPerMile;
     document.getElementById("moneymade").innerHTML = moneyMade;
     document.getElementById("aftergasamount").innerHTML = netPay;
+    document.getElementById("hourlymileage").innerHTML = hourlyMileage;
 });

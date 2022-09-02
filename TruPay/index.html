@@ -9,12 +9,23 @@
 
 <body>
     <header>
+        <!-- NAVIGATION -->
+        <nav class='nav-menu'>
+            <ul id="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        </header>
+        
+        <main>
         <!--Title and Call to Action-->
-        <h1>How much are you <em>really</em> making?</h1>
-        <p id='actioncall'>Does your job depend on your transportation? Is the commute really worth it?<br><br>Crunch the numbers and see just how much income you're truly earning per hour</p>
-    </header>
-    <main>
-        <br><br>
+        <div id="banner">
+            <h1>How much are you <em>really</em> making?</h1>
+            <p id='actioncall'>Does your job depend on your transportation? Is the commute really worth it?<br><br>Crunch the numbers and see just how much income you're truly earning per hour</p>
+        
+        </div>
         <!--Calculator-->
         <form id="trupayform">
             <!--AMOUNT EARNED LABEL-->
@@ -69,6 +80,7 @@
             <!--RESULTS-->
             <div id="formgroup">
                 <div id="answerContainer">
+                    <p id="resulttext">You averaged <span id ="hourlymileage"></span> miles driven per hour</p>
                     <p id="resulttext">Hourly earned before gas: $<span id="grosshourly"></span></p>
                     <p id="resulttext">Hourly cost of gas: $<span id="costpermile"></span></p>
                     <p id="resulttext">Net hourly after gas: $<span id="moneymade"></span></p>
