@@ -20,7 +20,6 @@ header {
 }
 
 .nav-menu {
-    position: fixed;
     z-index: 1000;
     width: 100%;
     
@@ -32,7 +31,6 @@ header {
     list-style-type: none;
     margin-left: 25%;
     padding-right: 25%;
-    
 }
 
 #nav-links a {
@@ -56,6 +54,11 @@ header {
    clip-path: polygon(0 var(--d),3px 0,calc(100% - 3px) 0,100% var(--d),100% 100%,0 100%); 
    transform: perspective(1000px) rotateX(-40deg);
    transition: 0.4s,clip-path 0.4s 0.4s,transform 0.4s 0.4s,0.4s;
+}
+
+.work a {
+    color: royalblue;
+    text-decoration: none;
 }
 
 hr {
